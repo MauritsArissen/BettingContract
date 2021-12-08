@@ -11,7 +11,7 @@ import "./BettingBossContract.sol";
 contract BettingContract is BettingBossContract {
     
     uint16 private _min = 1;
-    uint16 private _max = 2;
+    uint16 private _max = 1000;
     
     event NewBet(address _address, uint bettingNumber);
     event RoundFinished(address[] winners, uint luckyNumber);
